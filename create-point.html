@@ -20,7 +20,7 @@
 
             <header>
                 <img src="assets/logo.svg" alt="Logo Ecoleta">
-                <a href="http://google.com">
+                <a href="index.html">
                     <span></span>
                     Voltar para Home</a>
             </header>
@@ -46,11 +46,13 @@
                             <label for="anddres">Endereço
                                 <div class="obrigatorio">*</div>
                             </label>
-                            <input type="text" name="anddres">
+                            <input type="text" name="anddres" required>
                         </div>
                         <div class="field">
-                            <label for="address2">Número/Complemento</label>
-                            <input type="text" name="anddres2">
+                            <label for="address2">Número/Complemento
+                                <div class="obrigatorio">*</div>
+                            </label>
+                            <input type="text" name="anddres2" required>
                         </div>
                     </div>
 
@@ -59,7 +61,7 @@
                             <label for="state">Estado
                                 <div class="obrigatorio">*</div>
                             </label>
-                            <select name="uf">
+                            <select name="uf" required>
                                 <option value="">Selecione o Estado</option>
                             </select>
 
@@ -70,7 +72,7 @@
                             <label for="city">Cidade
                                 <div class="obrigatorio">*</div>
                             </label>
-                            <select name="city" disabled>
+                            <select name="city" disabled required>
                                 <option value="">Selecione a Cidade</option>
                             </select>
                         </div>
@@ -80,6 +82,41 @@
                     <legend>
                         <h2>Ítens de Coleta</h2>
                     </legend>
+
+                    <div class="items-grid">
+                        <li data-id="1">
+                            <img src="Assets/lampadas.svg" alt="Lâmpadas">
+                            <span>Lâmpadas</span>
+                        </li>
+
+                        <li data-id="2">
+                            <img src="Assets/baterias.svg" alt="Pilhas e Baterias">
+                            <span>Pilhas e Baterias</span>
+                        </li>
+
+                        <li data-id="3">
+                            <img src="Assets/papeis-papelao.svg" alt="Papéis e Papelão">
+                            <span>Papéis e Papelão</span>
+                        </li>
+
+                        <li data-id="4">
+                            <img src="Assets/eletronicos.svg" alt="Resíduos Eletronicos">
+                            <span>Resíduos Eletronicos</span>
+                        </li>
+
+                        <li data-id="5">
+                            <img src="Assets/organicos.svg" alt="Resíduos Orgânicos">
+                            <span>Resíduos Orgânicos</span>
+                        </li>
+
+                        <li data-id="6">
+                            <img src="Assets/oleo.svg" alt="Óleo de Cozinha">
+                            <span>Óleo de Cozinha</span>
+                        </li>
+                    </div>
+
+                    <input type="hidden" name="items">
+
                 </fieldset>
 
 
