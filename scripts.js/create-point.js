@@ -1,4 +1,4 @@
-function populateUFs() {
+function populateUFs() {´´
     const ufSelect = document.querySelector("select[name=uf]")
 
     fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
